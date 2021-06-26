@@ -1,0 +1,8 @@
+return {
+	["Sapphire"] = Color3.fromRGB(255, 120, 0),
+	["Ring"] = Color3.fromRGB(81, 117, 255),
+	["Amulet"] = Color3.fromRGB(220, 50, 50),
+	["Old Fragment"] = Color3.fromRGB(220, 50, 50),
+	["Ice Essence"] = Color3.fromRGB(220, 50, 50),
+	["Scroll"] = Color3.fromRGB(255, 240, 0)
+}
