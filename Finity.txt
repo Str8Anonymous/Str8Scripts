@@ -77,7 +77,7 @@ finity.dark_theme = { -- dark
 
 finity.test_theme = { -- Test
 	main_container = Color3.fromRGB(166, 71, 214),
-	separator_color = Color3.fromRGB(64, 50, 71),
+	separator_color = Color3.fromRGB(166, 71, 214), --64, 50, 71
 
 	text_color = Color3.fromRGB(255,255,255),
 
