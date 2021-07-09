@@ -11,7 +11,7 @@ function Bindable.OnInvoke(response)
 end
  
 for i,v in pairs(game.Players:GetPlayers()) do
-    if v.Name == "Zenkinox" or v.Name == "Vlazes" or v.Name == "agentkillerdragon" or v.Name == "IQZAMI" or v.Name == "starthrill" or v.Name == "SpaceDagger" or v.Name == "waldi2011" then
+    if v.Name == "Zenkinox" or v.Name == "Vlazes" or v.Name == "agentkillerdragon" or v.Name == "IQZAMI" or v.Name == "starthrill" or v.Name == "SpaceDagger" or v.Name == "waldi2011" or v.Name == "Sh_ftyy" then
         StaterGui:SetCore("SendNotification",{
         Title = "Moderator Notification",
         Text = "Moderator Is in your Game: "..v.Name,
@@ -24,7 +24,7 @@ for i,v in pairs(game.Players:GetPlayers()) do
 end
  
 game.Players.PlayerAdded:Connect(function(v)
-    if v.Name == "Zenkinox" or v.Name == "Vlazes" or v.Name == "agentkillerdragon" or v.Name == "IQZAMI" or v.Name == "starthrill" or v.Name == "SpaceDagger" or v.Name == "waldi2011" then
+    if v.Name == "Zenkinox" or v.Name == "Vlazes" or v.Name == "agentkillerdragon" or v.Name == "IQZAMI" or v.Name == "starthrill" or v.Name == "SpaceDagger" or v.Name == "waldi2011" or v.Name == "Sh_ftyy" then
         StaterGui:SetCore("SendNotification",{
         Title = "Moderator Notification",
         Text = "Moderator Is in your Game: "..v.Name,
