@@ -1,0 +1,37 @@
+warn("Loaded")
+local Bindable = Instance.new("BindableFunction")
+local StaterGui = game:GetService("StarterGui")
+ 
+function Bindable.OnInvoke(response)
+    if response == "Leave Game" then
+        game.Players.LocalPlayer:Kick("Moderator Was In Your Game")
+    elseif response == "Ignore" then
+        return
+    end
+end
+ 
+for i,v in pairs(game.Players:GetPlayers()) do
+    if v.Name == "Sh_ftyy" or v.Name == "Zenkinox" or v.Name == "agentkillerdragon" or v.Name == "Vlazes" or v.Name == "IQZAMI" or v.Name == "starthrill" or v.Name == "SkySickz" or v.Name == "Ultileon" or v.Name == "Zarothh" or v.Name == "waldi2011" orv.Name == "SpaceDagger" or v.Name == "BlueGMS" or v.Name == "SpaceDagger" or v.Name == "FlameEmber06" then
+        StaterGui:SetCore("SendNotification",{
+        Title = "Moderator Notification",
+        Text = "Moderator Is in your Game: "..v.Name,
+        Duration = 9e9,
+        Callback = Bindable,
+        Button1 = "Ignore",
+        Button2 = "Leave Game"
+        })
+    end
+end
+ 
+game.Players.PlayerAdded:Connect(function(v)
+    if v.Name == "Sh_ftyy" or v.Name == "Zenkinox" or v.Name == "agentkillerdragon" or v.Name == "Vlazes" or v.Name == "IQZAMI" or v.Name == "starthrill" or v.Name == "SkySickz" or v.Name == "Ultileon" or v.Name == "Zarothh" or v.Name == "waldi2011" orv.Name == "SpaceDagger" or v.Name == "BlueGMS" or v.Name == "SpaceDagger" or v.Name == "FlameEmber06" then
+        StaterGui:SetCore("SendNotification",{
+        Title = "Moderator Notification",
+        Text = "Moderator Is in your Game: "..v.Name,
+        Duration = 9e9,
+        Callback = Bindable,
+        Button1 = "Ignore",
+        Button2 = "Leave Game"
+        })
+    end
+end)
